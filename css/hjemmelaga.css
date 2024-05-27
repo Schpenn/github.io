@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #eee;
+  color: #0a0a0a;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #0a0a0a;
+  text-decoration: none;
+}
+#certpic{
+    width: 40%;
+}
+img{
+    border-radius: 50%;
+}
+section {
+    padding: 50px;
+}
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#about div{
+    width: 70%;
+    margin: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+footer {
+  background-color: #0a0a0a;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+}
