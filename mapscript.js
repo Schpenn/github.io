@@ -5,7 +5,7 @@ var markerArray = [];
 
 function moveISS() {
 	//This function will go into a loop where it gets the current location for ISS every 5 seconds
-		$.getJSON('https://api.open-notify.org/iss-now.json?callback=?', function(data) {
+		$.getJSON('http://api.open-notify.org/iss-now.json?callback=?', function(data) {
 			var lat = parseFloat(data['iss_position']['latitude']);
 			var lon = parseFloat(data['iss_position']['longitude']);
 			issCurrentPos = ({lat: lat, lng: lon});
