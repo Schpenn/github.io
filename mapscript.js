@@ -30,7 +30,7 @@ function initMap() {
 
 function addMarker(location) {
 		//adds a marker at the current location of ISS, and draws a line from the previous locations
-        var marker = new google.maps.Marker({
+        var marker = new google.maps.marker.AdvancedMarkerElement({
           position: location,
           map: map
         });
