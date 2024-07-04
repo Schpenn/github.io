@@ -9,7 +9,7 @@ function moveISS() {
 			var lat = parseFloat(data['latitude']);
 			var lon = parseFloat(data['longitude']);
 			issCurrentPos = ({lat: lat, lng: lon});
-			console.log(issCurrentPos);
+			//console.log(issCurrentPos);
 			addMarker(issCurrentPos);
 			});
 		setTimeout(moveISS, 5000);
