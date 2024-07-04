@@ -1,53 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Espens Portfolio</title>
-    <link rel="stylesheet" href="css/hjemmelaga.css" />
-  </head> 
-  <body>
-    <header>
-      <h1>Espen Bjørnsen</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section id="about">
-      <a id="certpic" href="https://schpenn.github.io/certifications/" ><img src="img/certs.PNG" width="300"></a>
-      <div>
-        <h2>
-          I'm Espen. 
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>  
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>  
-      </div>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav class="sticky">
+            <ul>
+                <li>
+                    <a href="#top">Home</a>
+                </li>
+                <li>
+                    <a href="#Coding">Coding</a>
+                </li>
+                <li>
+                    <a href="#Woodworking">Woodworking</a>
+                </li>
+                <li>
+                    <a href="#About">About me</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="top-container" id="top">
+            <section class="hero">
+                <div class="profile-img">
+                    <img src="assets/espen-photo.png">
+                </div>
+                <div class="who_am_i">
+                    <h1>Hello</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+            </section>
+        </div>
+        <h2 id="Coding" class="coding-heading">Some Coding Projects</h2>
+        <div class="coding-container">
+            <section class="portfolio" class="Coding">
+                <div class="project">
+                    <h2>My Certifications</h2>
+                    <img src="assets/project_images/Coding-Certification/certification.png"  >
+                    <p>A cool little self portrait using only CSS, showing off my certifications represented by medals. </p>
+                    <p>This was quite challenging but a lot of fun once I got the hang of it. </p>
+                    <a class="button" href="#certification-modal">More Info</a>
+                </div>
+                <div class="project">
+                    <h2>Space Station Tracker</h2>
+                    <img src="assets/project_images/Coding-Space_station/Space_station.png"  >
+                    <p>This ia a web-page that shows and tracks the position of the International Space Station. </p>
+                    <svg
+                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:cc="http://creativecommons.org/ns#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    xmlns:svg="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    id="svg6394"
+                    viewBox="0 0 1000 630"
+                    height="50"
+                    width="80">
+                   <defs
+                      id="defs6396">
+                     <clipPath
+                        id="clipPath1384"
+                        clipPathUnits="userSpaceOnUse">
+                       <path
+                          id="path1386"
+                          d="m 0,0 1224,0 0,792 L 0,792 0,0 Z" />
+                     </clipPath>
+                   </defs>
+                   <g
+                      transform="translate(0,-422.36216)"
+                      id="layer1">
+                     <g
+                        id="g1380"
+                        transform="matrix(1.25,0,0,-1.25,-96.6155,1237.1424)">
+                       <g
+                          clip-path="url(#clipPath1384)"
+                          id="g1382">
+                         <g
+                            transform="translate(-1.1497289,-19.134947)"
+                            id="g8256">
+                           <g
+                              id="g1408"
+                              transform="matrix(5.4044711,0,0,5.4044711,735.68009,383.57174)">
+                             <path
+                                d="m 0,0 -0.401,0.182 -0.491,-0.17 c 0,0 -0.043,0.469 -0.587,0.789 0,0 -0.299,0.182 -0.694,0 L -2.322,0.673 -2.568,1.083 14.347,18.495 16.663,17.597 0,0 Z m -5.727,-3.81 -1.11,-1.088 -0.342,0.491 -0.182,0.088 0.118,0.652 0.242,0.311 0.697,-0.34 0.081,0.091 0.496,-0.205 z m 0.799,-2.315 -3.561,-3.786 0.478,1.647 0,1.309 0.341,0.925 0.199,1.102 0.036,0.037 -0.027,0.013 0.603,-0.298 c 0,0 -0.099,-0.583 0.47,-0.882 0.569,-0.299 0.939,0.185 0.939,0.185 l 0.522,-0.252 z m -26.204,-23.285 19.015,19.674 -0.463,-1.531 0,-1.238 1.129,-0.556 -16.953,-18.028 -2.728,1.679 z M 9.803,20.793 9.693,20.299 -7.543,3.43 l -0.371,0.168 0,-0.532 5.432,-2.574 -0.726,-0.737 -0.438,0.182 -0.171,-0.224 -0.032,-0.235 -0.288,0.16 -0.618,-0.029 0.131,0.666 -12.339,5.749 -1.466,-1.359 -0.285,-2.312 7.814,-3.808 0,-0.718 0,-0.427 -1.509,0.733 -0.085,-0.52 1.594,-0.788 -1.594,0.788 -24.001,-23.722 -0.368,0.226 0,-0.589 5.366,-3.315 2.73,-1.687 5.709,-3.527 23.458,26.31 0.142,0.498 -5.579,2.732 0.854,0.954 c 0.1,0.584 -0.384,0.84 -0.384,0.84 l 0.227,0.284 c 0.072,0.157 -0.142,0.342 -0.142,0.342 l -0.747,0.553 0.078,0.087 0.123,0.626 0.816,0 1.014,-0.487 0.171,0.192 0.075,0.363 c 0,0 0.395,-0.171 0.672,0.117 l 1.281,1.367 5.848,-2.616 16.661,18.556 0.173,0.476 -11.88,4.6 z"
+                                style="fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                id="path1410" />
+                           </g>
+                           <g
+                              id="g1412"
+                              transform="matrix(5.4044711,0,0,5.4044711,388.22556,460.58708)">
+                             <path
+                                d="m 0,0 0.05,0 0.761,0.562 0,1.146 -0.683,0.327 -0.825,-0.562 0,-0.27 -0.264,0.135 -0.832,-0.58 0,-0.715 1.089,-0.562 L 0,0 Z"
+                                style="fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                id="path1414" />
+                           </g>
+                           <g
+                              id="g1416"
+                              transform="matrix(5.4044711,0,0,5.4044711,613.20667,383.05616)">
+                             <path
+                                d="M 0,0 -0.051,0.484 0.213,2.06 C 0.278,1.982 0.373,1.901 0.513,1.822 1.091,1.494 1.443,1.95 1.443,1.95 L 1.9,1.726 0,0 Z m -22.639,-20.563 -2.388,1.466 21.813,19.356 -0.395,-1.255 0.114,-1.281 -0.238,-1.114 -18.906,-17.172 z m 4.574,37.464 0,1.404 c 0,0.108 -0.037,0.212 -0.104,0.308 l 2.132,-0.03 0.019,0.759 0.46,0.095 -0.01,-0.344 -0.337,-0.094 -0.132,-3.049 -2.028,0.951 z m -10.691,-6.412 0,-1.057 -1.164,0.602 c 0.018,0.038 0.034,0.078 0.049,0.118 0.094,0.028 0.186,0.071 0.274,0.133 l 0.979,0.698 c -0.089,-0.155 -0.138,-0.321 -0.138,-0.494 m -7.771,16.936 c 0.041,-0.139 0.135,-0.239 0.135,-0.239 l 0.008,-0.059 -0.212,-0.147 -0.016,0.006 0.014,0.389 0.071,0.05 z m 0.473,-0.07 0.015,0.055 0.036,-0.019 -0.051,-0.036 z m 1.349,-1.973 0.715,0.022 c -0.01,-0.03 -0.016,-0.056 -0.021,-0.082 l -0.978,-0.482 -0.408,0.191 -0.001,0.011 0.651,0.354 c 0.023,-0.011 0.042,-0.014 0.042,-0.014 m 29.756,3.33 c 0.484,0.364 0.575,0.893 0.438,1.425 0.008,0.004 0.012,0.006 0.012,0.006 0.246,0.213 0.321,0.565 0.321,0.565 l 0.683,0.097 0.523,0.448 0.171,0.075 -0.032,-0.15 1.931,-2.989 0.263,0.18 -0.366,-0.347 -1.864,-1.096 -1.106,-1.105 -3.117,1.29 2.143,1.601 z m 3.261,-7.649 -1.779,-1.039 -0.341,-0.318 0.01,0.527 0.488,0.46 1.764,1.082 0.492,0.449 0.398,-0.173 -1.032,-0.988 z m -12.509,-1.812 0.039,-0.284 c 0,0 0.118,-0.096 0.342,-0.199 l -0.432,-0.175 -0.942,0.451 0.993,0.207 z m 2.892,5.845 -0.034,-0.732 c -0.159,0.067 -0.335,0.122 -0.524,0.162 0.243,0.124 0.439,0.325 0.558,0.57 m -0.723,-8.18 0.649,0.433 1.593,1.508 0.166,0.108 0.864,0.046 -1.129,-0.68 -1.509,-1.409 -0.653,-0.306 0.019,0.3 z m 8.675,6.305 -1.019,-0.966 -0.87,-0.031 0.793,0.504 0.694,0.667 0.402,-0.174 z m -6.184,2.816 0.277,0.158 -0.241,-0.165 0,-0.1 3.459,-1.461 -0.2,-0.119 -1.494,-1.451 -1.386,-0.812 -0.393,-0.014 -0.032,-0.234 -0.182,-0.107 -0.492,-0.479 -0.67,-0.022 0.106,1.195 0.166,0.494 0.154,0.456 c 0,0.131 -0.036,0.257 -0.103,0.375 l 1.622,-0.71 0.157,0.114 0.128,2.192 -1.172,0.481 0.296,0.209 z m 2.783,-8.475 -1.48,-1.437 -1.893,-1.139 -1.333,-1.184 -0.352,0.165 0.39,0.236 1.394,1.324 1.893,1.195 1.537,1.466 1.685,1.03 0.616,0.033 -0.621,-0.579 -1.836,-1.11 z m 3.97,-12.346 0,0.063 0.005,-0.066 -0.005,0.003 z M 1.473,3.992 1.486,3.985 0.419,3.046 0.381,3.064 l 0.094,0.565 0.25,0.363 0.476,-0.22 0.272,0.22 z m -47.798,22.173 0,-0.263 -0.619,-0.363 -0.562,0.268 -0.051,1.256 1.421,-0.703 -0.189,-0.195 z m -2.399,6.325 0.044,-0.611 0.334,-0.149 -0.292,-0.181 -0.979,0.452 0.893,0.489 z m 19.214,10.528 1.505,-0.59 -15.151,-8.395 -0.131,0.059 -0.633,-0.363 0,-0.119 -0.132,-0.073 -0.025,0.889 -0.562,0.278 -10e-4,0.024 15.13,8.29 z m -25.167,-12.704 0.068,-0.032 -0.02,-0.011 -0.048,0.043 z m -3.866,-3.217 -0.071,-0.528 -21.24,-11.724 -1.532,0.943 22.482,12.212 0.361,-0.903 z m -30.998,-6.328 -1.424,0.873 26.29,13.158 0.283,-0.139 c 0.142,-0.704 0.697,-0.647 0.697,-0.647 l 0.37,0.156 0.108,-0.054 -26.324,-13.347 z m 27.127,13.835 0,-0.17 0.569,-0.26 0.189,0.065 -0.021,0.653 0.302,0.26 0.228,-0.171 0.101,-1.445 -1.823,0.862 0.455,0.206 z m 23.58,12.075 1.372,-0.538 -20.242,-10.317 -1.384,0.647 20.254,10.208 z M 4.565,8.279 22.545,24.198 24.646,23.383 6.819,7.273 6.303,7.504 6.058,7.365 c 0,0 -0.011,0.502 -0.587,0.79 0,0 -0.278,0.107 -0.47,0 L 4.777,8.012 4.565,8.279 Z M 6.823,-0.085 1.87,2.377 2.71,3.131 C 2.881,3.402 2.624,3.693 2.624,3.693 L 2.966,4.042 C 3.051,4.17 2.881,4.334 2.881,4.334 l -0.527,0.385 0,0.291 0.228,0.384 0.009,0.149 0.649,-0.056 0.918,-0.395 0.181,0.149 0,0.48 1.665,1.377 0.096,0 5.192,-2.338 17.812,16.895 0.116,0.482 -10.877,4.185 -0.056,-0.473 -18.221,-15.406 -0.374,0.174 0,-0.49 L 4.606,7.813 3.816,7.173 3.71,7.194 3.528,7.024 3.485,6.799 3.176,6.959 2.671,6.898 2.71,7.543 l -4.697,2.234 -0.982,0.072 -0.256,0.185 -2.032,0.921 0.129,0.114 0.501,0 c 0,0 0.385,-0.182 0.15,0.149 l -0.086,0.385 0.278,-0.097 0.16,0.161 0,0.106 c 0,0 0.555,-0.256 0.971,0.182 0.417,0.437 0.278,1.121 0.096,1.366 -0.181,0.245 -0.501,0.053 -0.501,0.053 l 0.032,0.502 -0.171,0.096 0.021,0.267 0.096,0.085 0.032,0.982 -0.234,0.086 -0.235,-0.203 -0.513,-0.043 -0.715,-0.598 -0.01,-0.48 -0.47,-0.363 c 0,0 -0.758,0.256 -0.576,-0.437 l -0.16,-0.118 -0.235,-0.053 -0.032,-1.473 -0.001,0 -2.583,1.172 0.894,0.582 1.508,1.452 1.836,1.11 1.395,1.366 1.779,1.081 1.238,1.224 0.256,2.332 1.437,-0.624 2.064,1.679 -3.189,1.313 0.143,1.491 -1.155,-1.074 -0.548,0.225 0.408,0.251 1.381,1.31 0.27,2.846 -0.609,-0.579 -1.903,2.952 0,0.086 c 0.353,-0.043 0.63,0.181 0.63,0.181 0.502,0.395 0.331,1.057 0,1.558 -0.331,0.502 -0.961,0.523 -1.217,0.459 -0.256,-0.064 -0.459,-0.459 -0.459,-0.459 l -0.053,0 -1.975,3.096 -0.757,-0.513 2.006,-3.148 0,-0.075 -0.715,-0.496 -0.31,-0.625 C -5.223,31.87 -5.4,31.836 -5.503,31.794 l -1.479,1.152 -0.173,0.086 c 0,0 0.159,0.356 -0.254,0.526 0,0 -0.297,0.015 -0.326,-0.099 0,0 -0.585,-0.015 -0.328,-0.598 0.256,-0.441 0.683,-0.057 0.683,-0.057 l 1.024,-0.747 c -0.207,0.034 -0.403,0.005 -0.569,-0.106 l -2.932,-1.968 c -0.372,-0.25 -0.544,-0.627 -0.568,-1.044 l -0.684,-0.497 c 0.002,0.015 0.003,0.025 0.003,0.025 l 0.086,0.139 0,0.043 0.082,0.056 -0.082,0.035 0,0.517 -0.192,0.085 c -0.032,0.222 -0.331,0.596 -0.447,0.687 -0.103,0.093 -0.304,0.156 -0.535,0.156 -0.125,0 -0.24,-0.018 -0.336,-0.049 l 0.026,0.284 -0.352,0 -0.053,-0.49 -0.418,-0.224 -2.877,1.205 0.085,0.086 -4.355,1.807 -2.234,-1.409 4.383,-1.878 0.114,0.071 4.864,-2.085 0,-0.135 c 0.073,-0.267 0.285,-0.502 0.385,-0.601 -0.292,-0.139 -0.521,-0.386 -0.636,-0.691 l -0.036,0.024 0.077,1.31 -2.327,0.996 -0.206,-0.085 -0.071,-2.135 0.55,-0.248 -3.623,-2.556 0.05,2.04 -0.48,-1.771 0,-0.572 -0.203,-0.143 0.068,2.768 -0.48,-1.772 0,-2.304 c -0.062,-0.024 -0.121,-0.054 -0.178,-0.088 l -0.407,-0.013 0.334,1.368 0.074,3.042 -0.48,-1.772 0,-2.64 -0.747,-0.024 0,0.188 -0.342,0.185 c -0.128,0.384 -0.54,0.37 -0.54,0.37 l -0.314,-0.028 -1.167,0.555 -1.352,0.213 -0.227,-0.412 -0.996,-0.2 0,-0.256 0.427,-0.256 0,-0.541 0.313,-0.156 0,-0.594 -5.665,2.657 -0.862,0.404 0.763,0.564 1.921,1.025 1.58,1.167 1.878,0.91 1.466,1.139 1.736,0.925 0.071,2.547 -1.778,-0.868 -1.523,-1.124 -1.865,-0.897 -1.565,-1.167 -1.936,-0.953 -1.617,-1.196 c 0.084,0.259 -0.094,0.438 -0.094,0.438 l -0.01,0 0.085,0.046 1.636,1.238 1.95,0.954 1.58,1.195 1.878,0.997 1.495,1.11 1.764,0.882 0.072,2.661 -1.85,-0.91 -1.495,-1.167 -1.893,-0.911 -1.608,-1.181 -1.921,-0.968 -1.637,-1.196 -1.992,-1.024 -0.433,-0.3 c -10e-4,0.009 -10e-4,0.015 -10e-4,0.015 l -0.128,0.064 0,0.182 0.252,0.242 0.253,0.181 2.064,1.11 1.622,1.252 1.978,1.025 1.566,1.224 1.892,0.939 1.537,1.181 1.794,0.954 0,2.676 -1.808,-0.911 -1.537,-1.182 -1.921,-0.953 -1.622,-1.238 -1.979,-0.996 -1.679,-1.253 -2.021,-1.024 -1.736,-1.239 -1.067,-0.213 -0.897,0.413 -0.498,-0.128 0.124,-2.904 -1.761,0.826 0.014,0.099 -0.967,0.456 -0.079,0.035 0,0.513 0.669,0.405 0.655,-0.313 0.612,0.377 -0.036,1.011 -0.327,0.149 0.313,0.185 -0.05,1.004 -0.341,0.156 0.313,0.185 -0.006,0.221 15.649,8.918 0.051,0.396 -7.664,3 0,-0.407 -20.193,-10.771 -0.375,0.173 0,-0.427 3.646,-1.708 -0.693,0 -1.409,-0.654 0.107,-1.967 -1.715,0.828 0.797,0.427 c 0.036,0.123 0.049,0.234 0.045,0.334 l 0.126,0.065 0,2.248 -2.984,1.395 0.004,0.101 20.583,10.765 0.054,0.366 -7.14,2.818 -0.025,-0.392 -20.25,-9.994 -0.411,0.193 0,-0.564 2.397,-1.123 -1.422,-0.704 -0.324,0.213 -0.651,0.053 -0.292,-0.039 -1.622,-0.839 -0.313,0.242 -2.96,1.437 0,-0.47 -26.228,-12.843 -0.451,0.277 0,-0.498 2.8,-1.725 1.424,-0.876 2.903,-1.788 26.81,13.895 0,0.351 0.882,-0.423 0,-1.644 -25.042,-13.264 -0.476,0.294 0,-0.547 3.058,-1.882 1.535,-0.945 3.218,-1.981 18.725,10.606 -0.022,-0.299 2.05,-1.067 0.213,1.508 -0.402,0.9 6.251,3.541 -3.296,1.551 -3.241,-1.79 0.019,1.277 -0.105,0.249 1.829,0.994 -2.124,1.053 2.563,-1.271 c 0.015,-0.569 0.655,-0.612 0.655,-0.612 l 0.313,0.142 3.387,-1.593 0,0.373 0.468,-0.227 -0.083,-1.484 0.483,-1.238 -0.227,-1.566 0.455,-1.295 -0.213,-1.509 0.441,-1.209 -0.185,-1.551 2.192,-1.167 0.227,1.565 -0.441,1.181 0.221,1.478 0.078,-0.04 0.562,0.327 0.946,-0.47 0.627,0.363 0,0.527 0.064,0.057 0.313,-0.192 -0.278,-0.185 0.043,-0.954 0.548,-0.256 0.028,-0.669 0.249,-0.135 0.349,0.22 0.982,-0.498 0.598,0.377 -0.036,0.975 -0.114,0.029 0.434,0.284 0.961,-0.505 0.605,0.406 -0.036,0.953 -0.27,0.121 0.242,0.171 -0.043,0.968 -0.27,0.128 0.349,0.228 0.625,-0.302 0.093,-2.168 2.875,-1.38 0.199,0.384 0,1.324 0.29,0.172 1.034,-0.5 0.095,-0.046 -0.056,-0.057 c -0.118,-0.395 0.245,-0.597 0.245,-0.597 l 0.224,0 c -0.213,-0.395 0.15,-0.534 0.15,-0.534 l 0.395,-0.011 0.139,-0.139 0.202,-0.01 0.16,-0.107 0.812,-0.854 -0.235,-0.011 c -0.086,-0.448 0.267,-0.587 0.267,-0.587 l 0.512,-0.021 c 0.066,-0.045 0.131,-0.077 0.193,-0.1 l -1.232,-0.804 -0.142,0.043 -0.32,-0.149 -0.017,-0.373 0.13,-0.076 0.249,0.135 1.16,-0.583 0,-0.427 0.861,-0.455 0.249,0.142 0.015,0.178 0.361,-0.195 -1.678,-1.157 c -0.107,-0.074 -0.19,-0.168 -0.25,-0.278 -0.148,-0.01 -0.289,-0.054 -0.418,-0.14 l -2.23,-1.492 c -0.067,0.265 -0.203,0.472 -0.424,0.584 l -3.966,2.013 c -0.729,0.375 -1.759,-0.523 -2.339,-1.603 l -0.662,0.368 -0.804,-0.562 0,-0.712 1.024,-0.553 c -0.014,-0.488 0.151,-0.906 0.576,-1.136 l 3.861,-2.042 c 0.101,-0.053 0.204,-0.089 0.306,-0.109 l -0.231,-0.607 -0.534,-0.377 c -0.015,-0.011 -0.029,-0.026 -0.042,-0.042 -0.119,-0.153 -0.098,-0.532 0.263,-0.976 0.398,-0.491 0.953,-0.32 0.953,-0.32 l 0.69,0.491 0.471,0.421 c 0.526,-0.361 1.088,-0.491 1.539,-0.188 l 0.207,0.138 c 0.086,-0.146 0.205,-0.267 0.364,-0.352 l 8.266,-4.425 c 0.27,-0.145 0.567,-0.116 0.863,0.031 l 0.252,-0.111 -0.786,-0.605 0,-0.748 -1.356,-1.035 0,-0.832 0.715,-0.395 0.417,0.32 0,-0.384 0.693,-0.363 0.278,0.213 0.011,-0.373 0.715,-0.374 0.363,0.331 -0.022,-0.086 -0.213,-0.277 -0.011,-0.224 0.737,-0.416 1.265,1.056 0,0.47 0.112,0.128 0.448,-0.246 2.124,1.751 0.011,0.16 0.096,0 0.8,0.662 0,0.854 -0.694,0.373 0,0.363 -0.939,0.363 0,0.16 -0.875,0.427 0,0.086 -0.715,0.405 -1.238,-0.982 -0.587,0.256 -0.295,-0.226 -0.228,0.098 0,0.247 c 0.798,1.18 1.212,2.887 0.306,3.322 l -0.013,0.007 -0.827,0.427 c 0.195,0.214 0.306,0.46 0.306,0.722 l 0,2.722 c 0,0.825 -1.102,1.494 -2.462,1.494 -0.424,0 -0.823,-0.065 -1.172,-0.18 l 3.488,2.485 c 0.151,0.108 0.267,0.232 0.352,0.367 0.055,0.001 0.108,0.006 0.161,0.016 0.037,-0.323 0.163,-0.581 0.405,-0.698 l 1.608,-0.777 c -0.013,-0.183 -0.025,-0.36 -0.032,-0.501 -0.028,-0.541 0.377,-1.381 0.452,-1.452 0,0 -0.263,-0.515 -0.166,-1.126 0.031,-0.188 0.107,-0.34 0.21,-0.46 -0.218,-0.207 -0.354,-0.499 -0.354,-0.823 0,-0.379 0.186,-0.713 0.47,-0.92 -0.166,-0.181 -0.304,-0.45 -0.326,-0.855 L -21.342,5.237 -21.63,4.782 c 0,0 -0.053,-0.954 1.427,-0.954 1.181,0.1 1.138,0.783 1.138,0.783 l -0.227,0.569 -0.014,2.007 c 0,0 -0.043,0.398 -0.25,0.711 0.297,0.205 0.491,0.548 0.491,0.936 0,0.324 -0.136,0.616 -0.353,0.823 0.108,0.117 0.193,0.252 0.234,0.391 0.119,0.398 0.062,0.754 -0.08,1.039 0,0 0.117,0.135 0.249,0.345 l 0.523,0 0.221,0.233 -0.002,0.001 c 0.488,-0.178 0.933,0.114 1.254,0.594 l 0.806,-0.387 -0.091,-2.096 0,-0.085 3.387,-1.679 0.342,0.313 0.111,1.747 6.048,-2.903 -0.175,-0.125 0,-0.918 -0.683,0.32 L -7.871,5.978 -7.946,4.964 -7.708,4.839 -7.999,4.611 -8.056,3.615 -7.857,3.501 -8.099,3.288 -8.134,2.444 l -21.705,-18.586 -0.389,0.238 0,-0.571 4.808,-2.971 2.387,-1.475 5.052,-3.121 24.619,23.444 0.185,0.513 z"
+                                style="fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                id="path1418" />
+                           </g>
+                         </g>
+                       </g>
+                     </g>
+                   </g>
+                    </svg>
+                    <p>Because anything to do with the Space Station is pretty cool.</p>
+                    <a class="button" href="#space-modal">More Info</a>
+                </div>
+                <div class="project">
+                    <h2>Obscurator</h2>
+                    <img src="assets/project_images/Coding-Obscurator/obscurator.png">
+                    <p>This is a desktop app made with Python and Tkinter. It is a basic encrytion app, that obscures and un-obscures a text message. Playing with basic cryptography and arrays in Python.</p>
+                    <a class="button" href="#obscurator-modal">More Info</a>
+                </div>
+            </section>
+        </div>
+        <h2 id="Woodworking" class="woodworking-heading">Some Woodworking Projects</h2>
+        <div class="woodworking-container">
+            <section class="portfolio" class="Woodworking" >
+                <div class="project">
+                    <img src="assets/project_images/Small_box/Switch_box_main.jpg"  >
+                    <h2>Small Box</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a class="button" href="#">More</a>
+                </div>
+                <div class="project">
+                    <img src="assets/project_images/Bench/Bench_main.jpg"  >
+                    <h2>Patio Bench</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a class="button" href="#">More</a>
+                </div>
+                <div class="project">
+                    <img src="assets/project_images/Bedroom/Bedroom_main.jpg"  >
+                    <h2>Bedroom Nightstands</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a class="button" href="#">More</a>
+                </div>
+                <div class="project">
+                    <img src="assets/project_images/Halloween/Halloween_main.jpg"  >
+                    <h2>Halloween Lights</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a class="button" href="#">More</a>
+                </div>
+                <div class="project">
+                    <img src="assets/project_images/Breadbox/Bread_box_main.jpg"  >
+                    <h2>Bread Box</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a class="button" href="#">More</a>
+                </div>
+                
+                <div class="project">
+                    <img src="assets/project_images/Small_table/Small_table_mail.jpg"  >
+                    <h2>Small Oak Table</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a class="button" href="#">More</a>
+                </div>
+                <div class="project">
+                    <img src="assets/project_images/Cabinet/cabinet_main.jpg" >
+                    <h2>Medicine Cabinet</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a class="button" href="#">More</a>
+                </div>
+                <div class="project">
+                    <img src="assets/project_images/Pencil_box/IMG20230716200046.jpg" >
+                    <h2>Pencil Box</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a class="button" href="#">More</a>
+                </div>
+                <div class="project">
+                    <img src="assets/project_images/Laptop_cover/IMG_20220918_161438.jpg" >
+                    <h2>Laptop Cover</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a class="button" href="#">More</a>
+                </div>
+            </section>
+        </div>
         
-    </section>
-
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="gallery">
-        <!-- Portfolio items will go here -->
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact me:</h2>
-      <p>espenbjornsen@hotmail.com</p>
-    </section>
-
-    <footer>
-      <p>&copy; 2024 Espen Bjørnsen</p>
-    </footer>
-  </body>
+        <h2 id="About" class="about-heading">About me</h2>
+        <div class="about-container">
+        <section class="about-me">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </section>
+        </div>
+        <div class="footer">
+            <h2>Contact me</h2>
+            <section class="contact">
+                <a href="https://www.facebook.com/profile.php?id=100009069996454">
+                <svg width="60" height="60" fill="currentColor" id="Facebook" version="1.1" viewBox="0 0 144.083 144" width="144.083px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M72.041,11.166c-33.543,0-60.833,27.29-60.833,60.834c0,33.545,27.29,60.834,60.833,60.834  c33.544,0,60.835-27.289,60.835-60.834C132.875,38.456,105.584,11.166,72.041,11.166z M72.041,126.834  c-30.235,0-54.833-24.598-54.833-54.834c0-30.235,24.598-54.834,54.833-54.834c30.235,0,54.835,24.599,54.835,54.834  C126.875,102.236,102.276,126.834,72.041,126.834z"/><path d="M90.792,36.304H77.596c-0.031,0-0.061,0.001-0.09,0.004c-13.323,0.042-15.063,9.345-15.07,17.476  c-0.018,0.076-0.028,0.154-0.028,0.235v5.708h-9.118c-0.552,0-1,0.448-1,1v14.077c0,0.553,0.448,1,1,1h9.118v30.891  c0,0.553,0.448,1,1,1h13.307c0.553,0,1-0.447,1-1V75.805h13.076c0.553,0,1-0.447,1-1V60.728c0-0.552-0.447-1-1-1H76.715v-7.567  h14.076c0.553,0,1-0.448,1-1V37.304C91.792,36.752,91.344,36.304,90.792,36.304z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/espen-bj%C3%B8rnsen-b82b7687/">
+                <svg width="60" height="60" fill="currentColor" height="144px" id="linkedin" version="1.1" viewBox="0 0 144.083 144" width="144.083px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M72.041,11.166c-33.543,0-60.833,27.29-60.833,60.834c0,33.545,27.29,60.834,60.833,60.834  c33.544,0,60.835-27.289,60.835-60.834C132.875,38.456,105.584,11.166,72.041,11.166z M72.041,126.834  c-30.235,0-54.833-24.598-54.833-54.834c0-30.235,24.598-54.834,54.833-54.834c30.235,0,54.835,24.599,54.835,54.834  C126.875,102.236,102.276,126.834,72.041,126.834z"/><rect height="36.734" width="14.078" x="41.143" y="59.11"/><ellipse cx="48.042" cy="46.75" rx="7.125" ry="6.5"/><path d="M90.608,58.28c-2.883,0-5.326,0.525-7.334,1.574c-2.006,1.05-3.988,2.796-5.949,5.24V59.11H64.215v36.734h14.078V78.203  c0-3.344,0.531-5.66,1.592-6.952c1.061-1.291,2.443-1.937,4.15-1.937c1.545,0,2.744,0.479,3.598,1.436  c0.854,0.957,1.279,2.588,1.279,4.895v20.199h14.148V72.497c0-4.843-1.102-8.423-3.305-10.741  C97.555,59.438,94.504,58.28,90.608,58.28z"/></svg>
+                </a>
+                <a href="https://github.com/Schpenn">
+                <svg width="60" height="60" fill="currentColor" id="Layer_1" version="1.1" viewBox="-1163 1657.697 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path clip-rule="evenodd" d="M-1134.6598,1662.9163c-13.601,0-24.63,11.0267-24.63,24.6299   c0,10.8821,7.0573,20.1144,16.8435,23.3713c1.2308,0.2279,1.6829-0.5345,1.6829-1.1849c0-0.587-0.0227-2.5276-0.0334-4.5857   c-6.8521,1.4901-8.2979-2.906-8.2979-2.906c-1.1205-2.8467-2.7347-3.6039-2.7347-3.6039   c-2.2349-1.5287,0.1685-1.4972,0.1685-1.4972c2.473,0.1737,3.7755,2.5385,3.7755,2.5385c2.1967,3.7651,5.7618,2.6765,7.1675,2.0472   c0.2211-1.5917,0.8591-2.6786,1.5637-3.2936c-5.4707-0.6226-11.2218-2.7347-11.2218-12.1722c0-2.6888,0.9623-4.8861,2.538-6.611   c-0.2557-0.6206-1.0989-3.1255,0.2386-6.5183c0,0,2.0684-0.6616,6.7747,2.525c1.9648-0.5458,4.0719-0.8195,6.165-0.829   c2.093,0.0095,4.2017,0.2832,6.17,0.829c4.7012-3.1866,6.7665-2.525,6.7665-2.525c1.3406,3.3928,0.4974,5.8977,0.2417,6.5183   c1.5793,1.7249,2.5348,3.9221,2.5348,6.611c0,9.4602-5.7618,11.5428-11.2465,12.1527c0.8834,0.7644,1.6704,2.2632,1.6704,4.561   c0,3.2955-0.0282,5.9479-0.0282,6.7592c0,0.6556,0.4432,1.4236,1.6915,1.1818c9.7812-3.2605,16.8296-12.4896,16.8296-23.3682   C-1110.0299,1673.943-1121.0574,1662.9163-1134.6598,1662.9163z" fill-rule="evenodd"/><path d="M-1149.9611,1698.2793c-0.0542,0.1227-0.2469,0.1593-0.4222,0.0753c-0.1788-0.0804-0.2788-0.2473-0.2211-0.37   c0.053-0.126,0.2457-0.161,0.4242-0.0769C-1150.0013,1697.9882-1149.8993,1698.1566-1149.9611,1698.2793L-1149.9611,1698.2793z    M-1150.2642,1698.0547"/><path d="M-1148.9634,1699.3922c-0.1174,0.1086-0.3473,0.0581-0.5031-0.1139c-0.1613-0.1718-0.1912-0.4016-0.072-0.5118   c0.1211-0.1088,0.3438-0.0579,0.505,0.1139C-1148.8721,1699.0541-1148.8407,1699.2819-1148.9634,1699.3922L-1148.9634,1699.3922z    M-1149.1984,1699.14"/><path d="M-1147.9922,1700.8105c-0.151,0.1051-0.3979,0.0067-0.5505-0.2123c-0.151-0.2191-0.151-0.4819,0.0035-0.5872   c0.1526-0.1051,0.396-0.0104,0.5505,0.2068C-1147.8381,1700.4406-1147.8381,1700.7034-1147.9922,1700.8105L-1147.9922,1700.8105z    M-1147.9922,1700.8105"/><path d="M-1146.6619,1702.1812c-0.1351,0.1489-0.4227,0.1086-0.6329-0.0945c-0.2155-0.1984-0.2753-0.4803-0.1403-0.6293   c0.1371-0.149,0.4263-0.1072,0.6381,0.0944C-1146.5831,1701.7501-1146.5182,1702.0337-1146.6619,1702.1812L-1146.6619,1702.1812z    M-1146.6619,1702.1812"/><path d="M-1144.8265,1702.9769c-0.0597,0.1927-0.3365,0.2804-0.6154,0.1984c-0.2788-0.0845-0.4608-0.3103-0.4047-0.5051   c0.0577-0.1943,0.3361-0.2855,0.6169-0.1979C-1144.9512,1702.5563-1144.7688,1702.7805-1144.8265,1702.9769L-1144.8265,1702.9769z    M-1144.8265,1702.9769"/><path d="M-1142.8107,1703.1243c0.0067,0.2031-0.2299,0.3716-0.5226,0.3752c-0.2944,0.0067-0.533-0.1577-0.5361-0.3577   c0-0.2052,0.2313-0.3717,0.5258-0.3768C-1143.0509,1702.7594-1142.8107,1702.9227-1142.8107,1703.1243L-1142.8107,1703.1243z    M-1142.8107,1703.1243"/><path d="M-1140.9351,1702.8052c0.035,0.198-0.1686,0.4015-0.4594,0.4557c-0.2859,0.0526-0.5504-0.0701-0.587-0.2665   c-0.0354-0.2031,0.1716-0.4066,0.4573-0.4592C-1141.233,1702.4846-1140.9722,1702.6036-1140.9351,1702.8052L-1140.9351,1702.8052z    M-1140.9351,1702.8052"/></g></svg>
+                </a>
+            </section>
+        </div>
+        <div id="certification-modal" class="modal-window">
+            <div>
+              <a href="#Coding" title="Close" class="modal-close">Close</a>
+              <h1>My Certifications!</h1>
+              <img src="assets/project_images/Coding-Certification/certification.png"  >
+              <div>This is a project where I have drawn a self portrait using only html and css. The medals each represent one of my IT-related certifications. 
+                When you click on a medal, a modal appears (using a bit of javascript) with more information on that particular certification.
+                
+                <p>Skills:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <br>
+                <a href="https://github.com/Schpenn/certifications" >Here is the project on GitHub</a>
+              </div>
+              <br>
+              <p>Check it out live 👇</p>
+                <a href="https://schpenn.github.io/certifications/" target="_blank">          
+                My Certifications
+                </a>
+            </div>
+          </div>
+          <div id="space-modal" class="modal-window">
+            <div>
+              <a href="#Coding" title="Close" class="modal-close">Close</a>
+              <h1>My Certifications!</h1>
+              <img src="assets/project_images/Coding-Space_station/Space_station.png"  >
+              <div>In this project I have practiced using APIs and JSON-data. Using the <a href="http://open-notify.org/Open-Notify-API/">Open-Notify API</a> 
+                to get the current position of the International Space Station (ISS), and then using Google Maps Geolocation API to overlay the position on to the world map.
+                It updates the position every 5 seconds, and over time draws a line marking the ISS flight path.
+                
+                <p>Skills:</p>
+                <ul>
+                    <li>API</li>
+                    <li>JSON</li>
+                    <li>Javascript</li>
+                </ul>
+                <br>
+                <a href="https://github.com/Schpenn/ISS-Tracker" target="_blank">Here is the project on GitHub</a>
+              </div>
+              <br>
+              <p>Check it out live 👇</p>
+                <a href="#Coding" target="_blank">          
+                Coming soon
+                </a>
+            </div>
+          </div>
+          <div id="obscurator-modal" class="modal-window">
+            <div>
+              <a href="#Coding" title="Close" class="modal-close">Close</a>
+              <h1>Obscurator</h1>
+              <img src="assets/project_images/Coding-Obscurator/obscurator.png"  >
+              <div>This is a desktop app made with Python and Tkinter. It is a basic encrytion app, that obscures and un-obscures a text message. 
+                Not the most advanced cryptography, but fun to make and a challenging exploration of multi-dimentional arrays in Python.
+                <br>
+                I originally made this using VB.NET a long time ago, but thought it was a nice challenge to re-make it while learning Python.
+                <p>Skills:</p>
+                <ul>
+                    <li>Python</li>
+                    <li>Tkinter</li>
+                    <li>Cryptography</li>
+                </ul>
+                <br/>
+                <a href="https://github.com/Schpenn/obscurator" target="_blank" >Here is the project on GitHub</a>
+                <p>☝️ Check it out  GitHub to see how it works ☝️</p>
+              </div>
+              <br>
+              
+            </div>
+          </div>
+    </body>
 </html>

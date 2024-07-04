@@ -1,0 +1,254 @@
+body{
+    text-align: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: black;
+    color: whitesmoke;
+    height: 50px;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+
+#Coding, #Woodworking, #About, #top {
+    padding-top:70px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+li a:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+.top-container{
+    display: flex;
+    justify-content: center;
+    background-image: url(assets/cropped_garasjen.jpg);
+    height: 100%;
+}
+
+.hero {
+    width: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 30%);
+    padding:20px;
+}
+.who_am_i {
+    display: inline-block;
+    width: 60%;
+    padding-bottom:20px;
+}
+.profile-img img {
+    border-radius: 50%;
+}
+
+.portfolio-heading {
+    color: whitesmoke;
+    background-color: grey;
+    margin: 0;
+    padding: 0px;
+}
+
+.woodworking-container {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding:16px;
+    padding-bottom: 50px;
+}
+.coding-container {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding:16px;
+    padding-bottom: 50px;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap:wrap-reverse;
+    gap: 16px; /* Adds some space between the projects */
+    max-width: 80%; /* Set the maximum width to 80% of the parent */
+    justify-content: center; /* Center the content */
+    width: 60%;
+}
+
+.project {
+    flex: 1 1 calc(25% - 16px); /* Adjust the width of each project (assuming 3 per row) */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    background-color: whitesmoke; /* Optional: add a background color for better visibility */
+    padding: 16px; /* Optional: add padding for better spacing within each project */
+    text-align: center; /* Center the text and image */
+    align-items: center;
+    border: 5px solid whitesmoke; /* Optional: add a border for better separation */
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1324px) {
+    .project {
+        flex: 1 1 calc(33.333% - 16px); /* Adjust the width of each project (assuming 2 per row) */
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex: 1 1 calc(50% - 16px); /* Adjust the width of each project (assuming 1 per row) */
+    }
+}
+
+.project img {
+    max-width: 100%;
+    height: auto; /* Ensure the image scales properly */
+    display: block;
+    margin: 0 auto 8px; /* Center the image and add some space below it */
+}
+
+.project h2 {
+    font-size: 1.5em;
+    margin: 12px 0;
+}
+
+.project p {
+    font-size: 1em;
+    color: black; /* Optional: adjust text color */
+    
+}
+.button {
+    margin-top:auto;
+    background: black;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 25px;
+    padding: 16px;
+     
+
+}
+
+.button:hover {
+    background:grey;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    padding: 20px;
+}
+.about-me {
+    width:80%;
+}
+.about-me p {
+    text-align: left;
+    color: whitesmoke;
+}
+.footer{
+    
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    margin: 0;
+}
+.contact {
+    width: 80%;
+    margin:auto;
+    
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    &:target {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    & > div {
+      width: 400px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background: white;
+      border: solid
+    }
+    ul{
+        display: block;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        
+        overflow: hidden;
+    }
+    li {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    p {
+        font-weight: bold;
+        
+    }
+    header {
+        font-weight: bold;
+      }
+      h1 {
+        font-size: 150%;
+        margin: 0 0 15px;
+      }
+      img {
+        height: 150px;
+        padding-bottom: 10px;
+      }
+    }
+    .modal-close {
+        color: grey;
+        line-height: 50px;
+        font-size: 80%;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 70px;
+        text-decoration: none;
+        &:hover {
+          color: black;
+        }
+      }
+      
