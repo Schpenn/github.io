@@ -5,9 +5,9 @@ var markerArray = [];
 
 function moveISS() {
 	//This function will go into a loop where it gets the current location for ISS every 5 seconds
-		$.getJSON('http://api.open-notify.org/iss-now.json?callback=?', function(data) {
-			var lat = parseFloat(data['iss_position']['latitude']);
-			var lon = parseFloat(data['iss_position']['longitude']);
+		$.getJSON('https://api.wheretheiss.at/v1/satellites/25544', function(data) {
+			var lat = parseFloat(data['latitude']);
+			var lon = parseFloat(data['longitude']);
 			issCurrentPos = ({lat: lat, lng: lon});
 			console.log(issCurrentPos);
 			addMarker(issCurrentPos);
