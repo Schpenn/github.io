@@ -86,7 +86,7 @@ li a:hover {
 
 .portfolio {
     display: flex;
-    flex-wrap:wrap-reverse;
+    flex-wrap:wrap;
     gap: 16px; /* Adds some space between the projects */
     max-width: 80%; /* Set the maximum width to 80% of the parent */
     justify-content: center; /* Center the content */
@@ -98,7 +98,7 @@ li a:hover {
     box-sizing: border-box; /* Ensure padding and border are included in the width */
     background-color: whitesmoke; /* Optional: add a background color for better visibility */
     padding: 16px; /* Optional: add padding for better spacing within each project */
-    text-align: center; /* Center the text and image */
+    text-align: left; /* Center the text and image */
     align-items: center;
     border: 5px solid whitesmoke; /* Optional: add a border for better separation */
     display: flex;
