@@ -21,7 +21,8 @@ function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 3,
           center: {lat: 0, lng: 0},
-          mapTypeId: 'satellite'
+          mapTypeId: 'satellite',
+		  mapId: 'e26df3a3f430e5f4'
         });
         //creates an array to hold the coordinates outside of the moveISS()-loop
 		flightPlanCoordinates = [];
