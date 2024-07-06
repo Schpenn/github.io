@@ -160,18 +160,20 @@ li a:hover {
     padding: 20px;
 }
 .about-me {
-    width:70%;
+    width:60%;
     display:flex;
-    align-items: center;
+    align-items:start;
+
 }
 .about-me p {
     text-align: left;
     color: whitesmoke;
-    padding: 20px;
+    
 }
 p  span {
     font-size: larger;
     font-weight: bold;
+    padding-bottom: 22px;
 }
 .about-me img {
     max-width: 300px;
