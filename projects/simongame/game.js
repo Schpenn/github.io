@@ -26,7 +26,7 @@ function animatePress(currentColor){
 $(".btn").on("click", function(event){
     var userChosenColor = event.target.id;
     userClickedPattern.push(userChosenColor);
-    console.log("User " + userClickedPattern);
+    //console.log("User " + userClickedPattern);
     animatePress(userChosenColor);
     checkAnswer(userClickedPattern.length-1);
 });
@@ -38,7 +38,7 @@ function nextSequence(){
     var randomNumber =  (Math.floor(Math.random() *4));
     var randomChosenColor = buttonClors[randomNumber];
     gamePattern.push(randomChosenColor);
-    console.log("Game " + gamePattern);
+    //console.log("Game " + gamePattern);
     level ++;
     $("h1").text("Level " + level)
     userClickedPattern = [];
@@ -63,7 +63,6 @@ function showEasyHints(){
 function showMediumHints(){
     gamePattern.forEach((color, i) => {
         setTimeout(() => {
-            console.log("medium hin start");
             playSound(color);
             animatePress(color);
         }, i * 1000); 
@@ -72,7 +71,7 @@ function showMediumHints(){
 
 function checkAnswer(currentLevel){
     if(userClickedPattern[currentLevel] == gamePattern[currentLevel]){
-        console.log("sucess "+ currentLevel);
+        //console.log("sucess "+ currentLevel);
         playSound(userClickedPattern[currentLevel]);
         if(currentLevel === (gamePattern.length - 1)){
             setTimeout(function(){
@@ -88,7 +87,7 @@ function checkAnswer(currentLevel){
         playing = false;
         $("button").prop("disabled", false);
         $("select").prop("disabled", false);
-        console.log("wrong");
+        //console.log("wrong");
         playSound("wrong");
         $("body").addClass("game-over");
         $("h1").text("Game Over, Click Start to Restart");
