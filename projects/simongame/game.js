@@ -92,6 +92,8 @@ function checkAnswer(currentLevel){
         playSound("wrong");
         $("body").addClass("game-over");
         $("h1").text("Game Over, Click Start to Restart");
+        $(".hints").empty();
+        gamePattern = [];
         setTimeout(function(){
             $("body").removeClass("game-over");
         },200);
