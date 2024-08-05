@@ -7,6 +7,7 @@ var playing = false;
 
 $("button").on("click", function(){
     difficulty = $("Select").val();
+    level = 0;
     nextSequence();  
 })
 
